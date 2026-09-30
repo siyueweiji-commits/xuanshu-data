@@ -1,0 +1,36 @@
+{
+  "system": "meihua",
+  "version": "2026.09.30",
+  "rules": [
+    {
+      "id": "meihua_body_use_same",
+      "system": "meihua",
+      "condition": { "体用关系": "比和" },
+      "advice": "体用比和，所求之事可平顺推进，宜按既定计划行事。",
+      "weight": 0.5,
+      "level": "info",
+      "tags": ["断卦"],
+      "enabled": true
+    },
+    {
+      "id": "meihua_use_overcomes_body",
+      "system": "meihua",
+      "condition": { "体用关系": "用克体" },
+      "advice": "用克体，外势不容乐观，宜守不宜进，先稳住基本盘。",
+      "weight": 0.6,
+      "level": "warning",
+      "tags": ["断卦"],
+      "enabled": true
+    },
+    {
+      "id": "meihua_moving_line_5",
+      "system": "meihua",
+      "condition": { "动爻": 5 },
+      "advice": "五爻动，主事在君位、多与上级或外力相关，宜先理顺人事关系。",
+      "weight": 0.4,
+      "level": "info",
+      "tags": ["爻位"],
+      "enabled": true
+    }
+  ]
+}

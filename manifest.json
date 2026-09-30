@@ -1,0 +1,37 @@
+{
+  "version": "2026.09.30",
+  "files": [
+    {
+      "path": "rules/bazi.json",
+      "hash": "sha256:6a6e10b5217ed21940c534fb25f23311570df057cbdb153484795c9bb99d20f3"
+    },
+    {
+      "path": "rules/huangli.json",
+      "hash": "sha256:8bb63732c1cb5fe5bead884a082742a73a8515554f0c2dd517c65fa7ec91f6cb"
+    },
+    {
+      "path": "rules/liuyao.json",
+      "hash": "sha256:58e43b568aa822b0b3037a2cbdcd6dbbee89ffdbef8812c8c83ba03af4413896"
+    },
+    {
+      "path": "rules/meihua.json",
+      "hash": "sha256:0e8b1cb3dff08175823f5c095afa9b5a6d17a3f16965ed03063d7fea13cf7a4b"
+    },
+    {
+      "path": "rules/ziwei.json",
+      "hash": "sha256:a244d817863c4896cfd673787f7c28df7dc31e9d8d5bc821b1ac7453e6b7f258"
+    },
+    {
+      "path": "knowledge/stars.json",
+      "hash": "sha256:79363dc286c3b1d2c31c825884a27a46e98dedf4a0d34ce44fbe23e108baea4f"
+    },
+    {
+      "path": "templates/daily_report.md",
+      "hash": "sha256:350f2ab3fcbfbee6a9458e8b63d4c14ae2ec65bd22e3afad09d9f44b289d67f3"
+    },
+    {
+      "path": "data/city_coords.json",
+      "hash": "sha256:296daa76c0296bb687cfa581b2c30b70dcad7e25beca4ebe2035e66f798fd84a"
+    }
+  ]
+}

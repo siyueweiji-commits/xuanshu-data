@@ -1,0 +1,66 @@
+{
+  "system": "ziwei",
+  "version": "2026.09.30",
+  "rules": [
+    {
+      "id": "ziwei_travel_warning",
+      "system": "ziwei",
+      "condition": { "流日命宫": "迁移宫", "流日化忌": "迁移宫" },
+      "advice": "注意出行，避免长途驾驶；如需远行请预留时间、检查车况。",
+      "weight": 0.7,
+      "level": "warning",
+      "tags": ["出行", "安全"],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_wealth_guard",
+      "system": "ziwei",
+      "condition": { "流日财帛宫化忌": "武曲" },
+      "advice": "今日财务宜守不宜攻，避免大额支出与冲动消费。",
+      "weight": 0.6,
+      "level": "caution",
+      "tags": ["财运"],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_health_rest",
+      "system": "ziwei",
+      "condition": { "流日疾厄宫化忌": "巨门" },
+      "advice": "留意肠胃与咽喉不适，饮食清淡、少熬夜，注意作息节律。",
+      "weight": 0.5,
+      "level": "caution",
+      "tags": ["健康"],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_interpersonal_smooth",
+      "system": "ziwei",
+      "condition": { "流日命宫": "天同" },
+      "advice": "人际氛围较和缓，适合沟通协调、化解旧日误会。",
+      "weight": 0.4,
+      "level": "info",
+      "tags": ["人际"],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_career_opportunity",
+      "system": "ziwei",
+      "condition": { "流日官禄宫化禄": "紫微" },
+      "advice": "事业面有贵人助益，宜推进重要事项、主动汇报进展。",
+      "weight": 0.6,
+      "level": "info",
+      "tags": ["事业"],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_let_sleep_early",
+      "system": "ziwei",
+      "condition": { "流日福德宫化忌": true },
+      "advice": "心绪易起伏，宜早睡、减少夜间思虑，避免情绪化沟通。",
+      "weight": 0.45,
+      "level": "caution",
+      "tags": ["健康", "情绪"],
+      "enabled": true
+    }
+  ]
+}

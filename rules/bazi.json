@@ -1,0 +1,36 @@
+{
+  "system": "bazi",
+  "version": "2026.09.30",
+  "rules": [
+    {
+      "id": "bazi_day_clash_taisui",
+      "system": "bazi",
+      "condition": { "日支冲生肖": true },
+      "advice": "今日日支与生肖相冲，宜稳守、少与人争，重要决定可延后一日。",
+      "weight": 0.6,
+      "level": "caution",
+      "tags": ["冲煞"],
+      "enabled": true
+    },
+    {
+      "id": "bazi_strong_fire_heat",
+      "system": "bazi",
+      "condition": { "日主五行": "火", "月令": "夏" },
+      "advice": "火气偏旺，注意情绪起伏与心血管负荷，宜静心、多饮水。",
+      "weight": 0.5,
+      "level": "caution",
+      "tags": ["健康", "五行"],
+      "enabled": true
+    },
+    {
+      "id": "bazi_weak_metal_support",
+      "system": "bazi",
+      "condition": { "日主五行": "金", "身强弱": "身弱" },
+      "advice": "日主偏弱，宜借力合作、避免独力硬扛，重要事项先求支援。",
+      "weight": 0.45,
+      "level": "info",
+      "tags": ["事业", "五行"],
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "system": "liuyao",
+  "version": "2026.09.30",
+  "rules": [
+    {
+      "id": "liuyao_multi_moving_lines",
+      "system": "liuyao",
+      "condition": { "动爻数量": 3 },
+      "advice": "三爻齐动，事态多变，宜分步推进，避免一次押上全部筹码。",
+      "weight": 0.55,
+      "level": "caution",
+      "tags": ["断卦"],
+      "enabled": true
+    },
+    {
+      "id": "liuyao_no_moving_line",
+      "system": "liuyao",
+      "condition": { "动爻数量": 0 },
+      "advice": "静卦无动爻，事态稳定少变，以卦辞主旨判断，宜守成。",
+      "weight": 0.45,
+      "level": "info",
+      "tags": ["断卦"],
+      "enabled": true
+    },
+    {
+      "id": "liuyao_shikong",
+      "system": "liuyao",
+      "condition": { "世爻旬空": true },
+      "advice": "世爻旬空，主自身底气不足，宜先充实准备，再图进取。",
+      "weight": 0.5,
+      "level": "caution",
+      "tags": ["世应"],
+      "enabled": true
+    }
+  ]
+}

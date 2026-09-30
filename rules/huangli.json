@@ -1,0 +1,36 @@
+{
+  "system": "huangli",
+  "version": "2026.09.30",
+  "rules": [
+    {
+      "id": "huangli_day_clash",
+      "system": "huangli",
+      "condition": { "日冲生肖": true },
+      "advice": "今日冲煞，宜减少远行与重大签约，居家静养为上。",
+      "weight": 0.6,
+      "level": "caution",
+      "tags": ["黄历"],
+      "enabled": true
+    },
+    {
+      "id": "huangli_yi_negotiate",
+      "system": "huangli",
+      "condition": { "宜": "会亲友" },
+      "advice": "今日宜会亲友，适合走动、拜访与关系维护。",
+      "weight": 0.35,
+      "level": "info",
+      "tags": ["黄历", "人际"],
+      "enabled": true
+    },
+    {
+      "id": "huangli_ji_groundbreaking",
+      "system": "huangli",
+      "condition": { "忌": "动土" },
+      "advice": "今日忌动土，装修与施工类事项可另择日期。",
+      "weight": 0.3,
+      "level": "info",
+      "tags": ["黄历"],
+      "enabled": true
+    }
+  ]
+}
