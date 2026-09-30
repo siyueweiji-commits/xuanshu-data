@@ -3,63 +3,154 @@
   "version": "2026.09.30",
   "rules": [
     {
-      "id": "ziwei_travel_warning",
+      "id": "ziwei_soul_to_yi",
       "system": "ziwei",
-      "condition": { "流日命宫": "迁移宫", "流日化忌": "迁移宫" },
-      "advice": "注意出行，避免长途驾驶；如需远行请预留时间、检查车况。",
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫": "迁移宫"
+      },
+      "advice": "流日命宫落迁移宫，主外出行走之事为今日重心；长途驾驶请预留时间、先检查车况。",
       "weight": 0.7,
       "level": "warning",
-      "tags": ["出行", "安全"],
+      "tags": [
+        "出行",
+        "安全"
+      ],
       "enabled": true
     },
     {
-      "id": "ziwei_wealth_guard",
+      "id": "ziwei_soul_to_guanlu",
       "system": "ziwei",
-      "condition": { "流日财帛宫化忌": "武曲" },
-      "advice": "今日财务宜守不宜攻，避免大额支出与冲动消费。",
-      "weight": 0.6,
-      "level": "caution",
-      "tags": ["财运"],
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫": "官禄宫"
+      },
+      "advice": "流日命宫落官禄宫，工作事务为今日重心，宜优先处理与职责直接相关的事。",
+      "weight": 0.44,
+      "level": "info",
+      "tags": [
+        "事业"
+      ],
       "enabled": true
     },
     {
-      "id": "ziwei_health_rest",
+      "id": "ziwei_soul_to_caibo",
       "system": "ziwei",
-      "condition": { "流日疾厄宫化忌": "巨门" },
-      "advice": "留意肠胃与咽喉不适，饮食清淡、少熬夜，注意作息节律。",
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫": "财帛宫"
+      },
+      "advice": "流日命宫落财帛宫，钱财往来为今日重心，宜理账、清欠、细看合同条款。",
+      "weight": 0.44,
+      "level": "info",
+      "tags": [
+        "财运"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_soul_to_jie",
+      "system": "ziwei",
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫": "疾厄宫"
+      },
+      "advice": "流日命宫落疾厄宫，身体信号值得留意，宜清淡饮食、适度休息，别硬扛。",
       "weight": 0.5,
       "level": "caution",
-      "tags": ["健康"],
+      "tags": [
+        "健康"
+      ],
       "enabled": true
     },
     {
-      "id": "ziwei_interpersonal_smooth",
+      "id": "ziwei_soul_to_fuqi",
       "system": "ziwei",
-      "condition": { "流日命宫": "天同" },
-      "advice": "人际氛围较和缓，适合沟通协调、化解旧日误会。",
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫": "夫妻宫"
+      },
+      "advice": "流日命宫落夫妻宫，情感与亲密关系为今日重心，宜多陪伴、少指责。",
       "weight": 0.4,
       "level": "info",
-      "tags": ["人际"],
+      "tags": [
+        "人际"
+      ],
       "enabled": true
     },
     {
-      "id": "ziwei_career_opportunity",
+      "id": "ziwei_soul_ronghe",
       "system": "ziwei",
-      "condition": { "流日官禄宫化禄": "紫微" },
-      "advice": "事业面有贵人助益，宜推进重要事项、主动汇报进展。",
-      "weight": 0.6,
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫星": [
+          "天同",
+          "天梁",
+          "左辅",
+          "右弼",
+          "天魁",
+          "天钺"
+        ]
+      },
+      "advice": "流日命宫坐柔和助星，气氛和缓，宜沟通协调、以柔化刚，遇事容易有人搭手。",
+      "weight": 0.42,
       "level": "info",
-      "tags": ["事业"],
+      "tags": [
+        "人际",
+        "贵人"
+      ],
       "enabled": true
     },
     {
-      "id": "ziwei_let_sleep_early",
+      "id": "ziwei_soul_ganglie",
       "system": "ziwei",
-      "condition": { "流日福德宫化忌": true },
-      "advice": "心绪易起伏，宜早睡、减少夜间思虑，避免情绪化沟通。",
-      "weight": 0.45,
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫星": [
+          "七杀",
+          "破军",
+          "擎羊",
+          "陀罗",
+          "火星",
+          "铃星"
+        ]
+      },
+      "advice": "流日命宫见刚烈之星，行事易急进，宜按流程办事、少做临场起意之举。",
+      "weight": 0.5,
       "level": "caution",
-      "tags": ["健康", "情绪"],
+      "tags": [
+        "事业"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_soul_jimen",
+      "system": "ziwei",
+      "label": "紫微·流日命宫",
+      "condition": {
+        "流日命宫星": "巨门"
+      },
+      "advice": "流日命宫坐巨门，言语易生误会，沟通宜用书面、少作转述。",
+      "weight": 0.46,
+      "level": "caution",
+      "tags": [
+        "人际"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "ziwei_wealth_ji_float",
+      "system": "ziwei",
+      "label": "紫微·流日化忌",
+      "condition": {
+        "流日化忌宫": "田宅"
+      },
+      "advice": "流日化忌入田宅宫，家宅与固定资产相关事宜宜缓办，文书细节多核一遍。",
+      "weight": 0.5,
+      "level": "caution",
+      "tags": [
+        "财运"
+      ],
       "enabled": true
     }
   ]

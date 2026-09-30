@@ -1,37 +1,61 @@
 {
   "version": "2026.09.30",
+  "generatedAt": "2026-09-30",
   "files": [
     {
       "path": "rules/bazi.json",
-      "hash": "sha256:6a6e10b5217ed21940c534fb25f23311570df057cbdb153484795c9bb99d20f3"
+      "hash": "sha256:895adfdfbdeb47f7d93763db8771f1144630daecdf4255f58b707669e598c236",
+      "size": 4271
     },
     {
       "path": "rules/huangli.json",
-      "hash": "sha256:8bb63732c1cb5fe5bead884a082742a73a8515554f0c2dd517c65fa7ec91f6cb"
+      "hash": "sha256:9d0268c2d3de6f36d5c948eae8f2a5e5278feb3bc8bf5fe8da888b6d7221c368",
+      "size": 3979
     },
     {
       "path": "rules/liuyao.json",
-      "hash": "sha256:58e43b568aa822b0b3037a2cbdcd6dbbee89ffdbef8812c8c83ba03af4413896"
+      "hash": "sha256:9f47ebb8e417e02aa49f0688cbbb27f81cfe4bd081c37d7a92c60dd82244c261",
+      "size": 8136
     },
     {
       "path": "rules/meihua.json",
-      "hash": "sha256:0e8b1cb3dff08175823f5c095afa9b5a6d17a3f16965ed03063d7fea13cf7a4b"
+      "hash": "sha256:6bd605c8b86662c3b141f31d32bcf11cf44baf4662eac612e3255e1ecca84d00",
+      "size": 7871
     },
     {
       "path": "rules/ziwei.json",
-      "hash": "sha256:a244d817863c4896cfd673787f7c28df7dc31e9d8d5bc821b1ac7453e6b7f258"
+      "hash": "sha256:b182356e88e39ff8191315d0f89954e1b27727f9e54b9514d99bc655798d57b6",
+      "size": 4157
+    },
+    {
+      "path": "knowledge/gua.json",
+      "hash": "sha256:a224f214418a560b4ccfb1ad122a652a8d6796762ef1acec8816a500134aace6",
+      "size": 11354
     },
     {
       "path": "knowledge/stars.json",
-      "hash": "sha256:79363dc286c3b1d2c31c825884a27a46e98dedf4a0d34ce44fbe23e108baea4f"
+      "hash": "sha256:79363dc286c3b1d2c31c825884a27a46e98dedf4a0d34ce44fbe23e108baea4f",
+      "size": 2524
     },
     {
       "path": "templates/daily_report.md",
-      "hash": "sha256:350f2ab3fcbfbee6a9458e8b63d4c14ae2ec65bd22e3afad09d9f44b289d67f3"
+      "hash": "sha256:a790107a4b7cb2b38c7af91d1389922ff823dfb9012d53edfadcb0c9f47282b1",
+      "size": 2237
+    },
+    {
+      "path": "templates/index.json",
+      "hash": "sha256:9f1c736a211253dd4f4e25e6f18c2704c42aa4ff1167935306c7ca7d84512af7",
+      "size": 506
+    },
+    {
+      "path": "templates/range_report.md",
+      "hash": "sha256:708efa6a23648346d572fb07a8ec83d5ca7a292526e1b369903da1844f1475c2",
+      "size": 1723
     },
     {
       "path": "data/city_coords.json",
-      "hash": "sha256:296daa76c0296bb687cfa581b2c30b70dcad7e25beca4ebe2035e66f798fd84a"
+      "hash": "sha256:296daa76c0296bb687cfa581b2c30b70dcad7e25beca4ebe2035e66f798fd84a",
+      "size": 2375
     }
   ]
 }

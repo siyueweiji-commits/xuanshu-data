@@ -3,33 +3,163 @@
   "version": "2026.09.30",
   "rules": [
     {
-      "id": "huangli_day_clash",
+      "id": "huangli_yi_huiqinyou",
       "system": "huangli",
-      "condition": { "日冲生肖": true },
-      "advice": "今日冲煞，宜减少远行与重大签约，居家静养为上。",
-      "weight": 0.6,
-      "level": "caution",
-      "tags": ["黄历"],
-      "enabled": true
-    },
-    {
-      "id": "huangli_yi_negotiate",
-      "system": "huangli",
-      "condition": { "宜": "会亲友" },
+      "label": "黄历·宜",
+      "condition": {
+        "宜": "会亲友"
+      },
       "advice": "今日宜会亲友，适合走动、拜访与关系维护。",
-      "weight": 0.35,
+      "weight": 0.38,
       "level": "info",
-      "tags": ["黄历", "人际"],
+      "tags": [
+        "人际"
+      ],
       "enabled": true
     },
     {
-      "id": "huangli_ji_groundbreaking",
+      "id": "huangli_yi_kaishi",
       "system": "huangli",
-      "condition": { "忌": "动土" },
-      "advice": "今日忌动土，装修与施工类事项可另择日期。",
+      "label": "黄历·宜",
+      "condition": {
+        "宜": "开市"
+      },
+      "advice": "今日宜开市，签约、开单、上新等经营类动作可趁势推进。",
+      "weight": 0.42,
+      "level": "info",
+      "tags": [
+        "财运"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_yi_chuxing",
+      "system": "huangli",
+      "label": "黄历·宜",
+      "condition": {
+        "宜": "出行"
+      },
+      "advice": "今日宜出行，短途往返与外出办事较为顺遂。",
+      "weight": 0.4,
+      "level": "info",
+      "tags": [
+        "出行"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_yi_jingxin",
+      "system": "huangli",
+      "label": "黄历·宜",
+      "condition": {
+        "宜": [
+          "祈福",
+          "祭祀"
+        ]
+      },
+      "advice": "今日宜祈福祭祀，宜静心收敛、感念旧情，也适合复盘与整理。",
+      "weight": 0.28,
+      "level": "info",
+      "tags": [
+        "健康"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_ji_dongtu",
+      "system": "huangli",
+      "label": "黄历·忌",
+      "condition": {
+        "忌": "动土"
+      },
+      "advice": "今日忌动土，装修、施工、开挖类事项宜另择日期。",
+      "weight": 0.32,
+      "level": "info",
+      "tags": [
+        "事业"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_ji_chuxing",
+      "system": "huangli",
+      "label": "黄历·忌",
+      "condition": {
+        "忌": "出行"
+      },
+      "advice": "今日忌出行，非必要的长途安排建议顺延。",
+      "weight": 0.5,
+      "level": "caution",
+      "tags": [
+        "出行"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_ji_kaishi",
+      "system": "huangli",
+      "label": "黄历·忌",
+      "condition": {
+        "忌": "开市"
+      },
+      "advice": "今日忌开市，新店、上新与大额交易宜缓一缓。",
+      "weight": 0.44,
+      "level": "caution",
+      "tags": [
+        "财运"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_ji_jiaqu",
+      "system": "huangli",
+      "label": "黄历·忌",
+      "condition": {
+        "忌": "嫁娶"
+      },
+      "advice": "今日忌嫁娶，喜事筹备可留意日期搭配。",
       "weight": 0.3,
       "level": "info",
-      "tags": ["黄历"],
+      "tags": [
+        "人际"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_xiongsha_zhongri",
+      "system": "huangli",
+      "label": "黄历·凶煞",
+      "condition": {
+        "凶煞": "重日"
+      },
+      "advice": "今日逢重日，凡事反复者多，宜把话说清、把字签全。",
+      "weight": 0.34,
+      "level": "caution",
+      "tags": [
+        "事业"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "huangli_jishen_guiren",
+      "system": "huangli",
+      "label": "黄历·吉神",
+      "condition": {
+        "吉神": [
+          "天德",
+          "月德",
+          "天恩",
+          "母仓",
+          "阴德"
+        ]
+      },
+      "advice": "今日吉神在位，遇事多向长辈与资深同事请教，易得点拨与助力。",
+      "weight": 0.34,
+      "level": "info",
+      "tags": [
+        "贵人",
+        "人际"
+      ],
       "enabled": true
     }
   ]

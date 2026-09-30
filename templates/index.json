@@ -1,0 +1,19 @@
+{
+  "version": "2026.09.30",
+  "templates": [
+    {
+      "id": "daily_report",
+      "name": "流日参考报告",
+      "scope": "daily",
+      "file": "daily_report.md",
+      "desc": "单日：黄历宜忌 + 冲煞建除 + 五类注意事项（可叠加个人命盘）"
+    },
+    {
+      "id": "range_report",
+      "name": "流日区间报告",
+      "scope": "range",
+      "file": "range_report.md",
+      "desc": "多日区间：逐日摘要 + 分类统计 + 高频提示 + 重点日"
+    }
+  ]
+}

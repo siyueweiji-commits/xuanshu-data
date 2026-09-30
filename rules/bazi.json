@@ -3,33 +3,161 @@
   "version": "2026.09.30",
   "rules": [
     {
-      "id": "bazi_day_clash_taisui",
+      "id": "bazi_wood_spring",
       "system": "bazi",
-      "condition": { "日支冲生肖": true },
-      "advice": "今日日支与生肖相冲，宜稳守、少与人争，重要决定可延后一日。",
-      "weight": 0.6,
-      "level": "caution",
-      "tags": ["冲煞"],
+      "label": "八字·春令",
+      "condition": {
+        "日主五行": "木",
+        "季节": "春"
+      },
+      "advice": "木旺于春，生机外放，宜顺势启动新计划；但忌同时铺太多摊子，精力要留有余量。",
+      "weight": 0.46,
+      "level": "info",
+      "tags": [
+        "事业"
+      ],
       "enabled": true
     },
     {
-      "id": "bazi_strong_fire_heat",
+      "id": "bazi_fire_summer",
       "system": "bazi",
-      "condition": { "日主五行": "火", "月令": "夏" },
-      "advice": "火气偏旺，注意情绪起伏与心血管负荷，宜静心、多饮水。",
+      "label": "八字·夏令",
+      "condition": {
+        "日主五行": "火",
+        "季节": "夏"
+      },
+      "advice": "火气偏旺又逢夏令，注意情绪起伏与心血管负荷，宜静心、多饮水、少熬夜。",
       "weight": 0.5,
       "level": "caution",
-      "tags": ["健康", "五行"],
+      "tags": [
+        "健康"
+      ],
       "enabled": true
     },
     {
-      "id": "bazi_weak_metal_support",
+      "id": "bazi_earth_wood_fire",
       "system": "bazi",
-      "condition": { "日主五行": "金", "身强弱": "身弱" },
-      "advice": "日主偏弱，宜借力合作、避免独力硬扛，重要事项先求支援。",
-      "weight": 0.45,
+      "label": "八字·季令",
+      "condition": {
+        "日主五行": "土",
+        "季节": [
+          "春",
+          "夏"
+        ]
+      },
+      "advice": "土生于木火之季，力量偏孤，宜多借外部资源与协助成事，避免单打独斗。",
+      "weight": 0.4,
       "level": "info",
-      "tags": ["事业", "五行"],
+      "tags": [
+        "事业"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_metal_autumn",
+      "system": "bazi",
+      "label": "八字·秋令",
+      "condition": {
+        "日主五行": "金",
+        "季节": "秋"
+      },
+      "advice": "金旺于秋，主肃杀收敛，宜顺时收敛锋芒，先固化既有成果再谋扩张。",
+      "weight": 0.46,
+      "level": "info",
+      "tags": [
+        "事业"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_water_winter",
+      "system": "bazi",
+      "label": "八字·冬令",
+      "condition": {
+        "日主五行": "水",
+        "季节": "冬"
+      },
+      "advice": "水旺逢冬，寒气偏重，宜注意保暖与关节养护，作息宁早勿晚。",
+      "weight": 0.46,
+      "level": "caution",
+      "tags": [
+        "健康"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_missing_water",
+      "system": "bazi",
+      "label": "八字·缺五行",
+      "condition": {
+        "缺五行": "水"
+      },
+      "advice": "命局缺水，宜多补水、多接触流动环境，并留意泌尿与肾水相关保养。",
+      "weight": 0.34,
+      "level": "info",
+      "tags": [
+        "健康"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_missing_metal",
+      "system": "bazi",
+      "label": "八字·缺五行",
+      "condition": {
+        "缺五行": "金"
+      },
+      "advice": "命局缺金，决断力与收束力偏弱，宜用清单与制度补齐条理性。",
+      "weight": 0.34,
+      "level": "info",
+      "tags": [
+        "事业"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_missing_fire",
+      "system": "bazi",
+      "label": "八字·缺五行",
+      "condition": {
+        "缺五行": "火"
+      },
+      "advice": "命局缺火，行动力易受环境影响，宜多接触暖光环境、适度运动提气。",
+      "weight": 0.34,
+      "level": "info",
+      "tags": [
+        "健康"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_missing_wood",
+      "system": "bazi",
+      "label": "八字·缺五行",
+      "condition": {
+        "缺五行": "木"
+      },
+      "advice": "命局缺木，开创与外拓之力偏弱，宜多亲近绿意环境、主动结交新圈层。",
+      "weight": 0.34,
+      "level": "info",
+      "tags": [
+        "人际"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "bazi_missing_earth",
+      "system": "bazi",
+      "label": "八字·缺五行",
+      "condition": {
+        "缺五行": "土"
+      },
+      "advice": "命局缺土，落地与承载之力偏弱，宜把计划拆小、按期兑现以免悬空。",
+      "weight": 0.34,
+      "level": "info",
+      "tags": [
+        "财运"
+      ],
       "enabled": true
     }
   ]
