@@ -1,6 +1,6 @@
 {
-  "version": "2026.09.30",
-  "generatedAt": "2026-09-30",
+  "version": "2026.10.05",
+  "generatedAt": "2026-10-05",
   "files": [
     {
       "path": "rules/bazi.json",
@@ -54,8 +54,8 @@
     },
     {
       "path": "data/city_coords.json",
-      "hash": "sha256:296daa76c0296bb687cfa581b2c30b70dcad7e25beca4ebe2035e66f798fd84a",
-      "size": 2375
+      "hash": "sha256:c73743e854a39dd37a92be11ebc91da8f6fb250c69b5c3cc1826470221f5dadf",
+      "size": 42691
     }
   ]
 }
